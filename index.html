@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<style>
+  .hero {
+    position: relative;
+  }
+
+  .hero .item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .content {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+</style>
+
+<body class="bg-white">
+  <!-- 🔶 Top Strip -->
+  <div class="grid grid-cols-3 items-center bg-[#b8833a] text-white text-sm px-6 h-15">
+    <!-- Left -->
+    <div class="flex items-center gap-2 pl-4">
+      🌿 <span>Purely Natural</span>
+    </div>
+
+    <!-- Center -->
+    <div class="hidden md:flex justify-center items-center gap-2">
+      🌿 <span>Premium Organic Ingredients</span>
+    </div>
+
+    <!-- Right -->
+    <div class="flex justify-end items-center gap-4 pr-4">
+      <span class="hidden sm:block">Limited Offer</span>
+
+      <button
+        class="bg-yellow-300 text-black px-5 py-1.5 rounded-full text-sm font-semibold shadow hover:bg-yellow-400 transition duration-300">
+        Shop Now →
+      </button>
+    </div>
+  </div>
+
+  <!-- ⚪ Navbar -->
+  <nav class="bg-gray-100 px-6 py-4 flex items-center justify-between shadow-sm">
+    <!-- Logo -->
+    <div class="flex flex-col leading-tight">
+      <span class="text-2xl font-bold text-[#b8833a]">Jimmy's Whiskey</span>
+      <span class="text-xs tracking-widest text-gray-500">PURE WELLNESS</span>
+    </div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+      <li>
+        <a href="#" class="text-[#b8833a] border-b-2 border-[#b8833a] pb-1">
+          Home
+        </a>
+      </li>
+
+      <li><a href="#" class="hover:text-[#b8833a]">Collection</a></li>
+      <li><a href="#" class="hover:text-[#b8833a]">Membership</a></li>
+      <li><a href="#" class="hover:text-[#b8833a]">Contact Us</a></li>
+      <li><a href="#" class="hover:text-[#b8833a]">About Us</a></li>
+    </ul>
+
+    <!-- Icons -->
+    <div class="flex items-center gap-5 text-gray-600 text-lg">
+      <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-[#b8833a]"></i>
+      <i class="fa-regular fa-user cursor-pointer hover:text-[#b8833a]"></i>
+      <i class="fa-regular fa-heart cursor-pointer hover:text-[#b8833a]"></i>
+      <i class="fa-solid fa-bag-shopping cursor-pointer hover:text-[#b8833a]"></i>
+    </div>
+  </nav>
+
+  <!-- image silder -->
+  <section class="hero">
+    <div class="owl-carousel hero-slider">
+      <div class="item" style="background-image: url(&quot;https://jimmyswhiskey.in/assets/hero/banner-3.jpg&quot;);">
+      </div>
+
+      <div class="item" style="
+            background-image: url(&quot;https://jimmyswhiskey.in/assets/hero/banner-2.jpg&quot;);">
+      </div>
+
+      <div class="item"
+        style="
+            background-image: url(&quot;https://thumbs.dreamstime.com/b/blue-perfume-bottle-splashing-water-flowers-blue-background-blue-perfume-bottle-splashing-water-flowers-378747537.jpg&quot;);">
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-red-100 py-6">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <!-- Item 1 -->
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-12 h-12 flex items-center justify-center border-2 border-dashed rounded-full">
+          🎁
+        </div>
+        <div class="text-left">
+          <h4 class="font-semibold text-sm">Up To 50% Offer</h4>
+          <p class="text-xs text-gray-500">On all your Perfume orders</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-12 h-12 flex items-center justify-center border-2 border-dashed rounded-full">
+          🌸
+        </div>
+        <div class="text-left">
+          <h4 class="font-semibold text-sm">Perfume Variety</h4>
+          <p class="text-xs text-gray-500">Explore Scents for Everyone</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-12 h-12 flex items-center justify-center border-2 border-dashed rounded-full">
+          🚚
+        </div>
+        <div class="text-left">
+          <h4 class="font-semibold text-sm">Free Shipping</h4>
+          <p class="text-xs text-gray-500">On orders from ₹799</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-12 h-12 flex items-center justify-center border-2 border-dashed rounded-full">
+          ✔️
+        </div>
+        <div class="text-left">
+          <h4 class="font-semibold text-sm">Genuine Products</h4>
+          <p class="text-xs text-gray-500">100% authentic products</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Selections -->
+  <div class="text-2xl font-bold pt-10 text-center p-10">
+    Premium Selections
+  </div>
+
+  <!-- img  -->
+  <div class="categories-grid container mx-auto flex flex-wrap justify-center gap-4">
+    <div class="category-column flex flex-col gap-4">
+      <div class="category-card overflow-hidden rounded-lg shadow-lg">
+        <img src="https://jimmyswhiskey.in/assets/category/perfume.jpg" alt="Perfume"
+          class="w-full h-auto object-cover" />
+      </div>
+      <div class="category-card overflow-hidden rounded-lg shadow-lg">
+        <img src="https://jimmyswhiskey.in/assets/category/gift%20set.jpg" alt="Gift Set"
+          class="w-full h-auto object-cover" />
+      </div>
+    </div>
+
+    <div class="category-column flex flex-col gap-4">
+      <div class="category-card overflow-hidden rounded-lg shadow-lg">
+        <img src="https://jimmyswhiskey.in/assets/category/gift%20set.jpg" alt="Aatar"
+          class="w-full h-auto object-cover" />
+      </div>
+      <div class="category-card overflow-hidden rounded-lg shadow-lg">
+        <img src="https://jimmyswhiskey.in/assets/category/dakhoon.jpg" alt="Dakhoon"
+          class="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- container -->
+
+  <div class=" bg-pink-200  px-20 py-10  overflow-hidden mt-12">
+    <div>
+      <h1 class="mb-5 text-4xl font-semibold">Best Sellers</h1>
+    </div>
+    <div class="flex gap-5">
+      <div class="rounded-lg">
+        <img src="https://jimmyswhiskey.in/storage/products/FrRnqFBqmpsTQDSMs171cLeEv1jvLmzBxfNYlCHR.webp" alt="" />
+        <span class="text-pink-700 font-bold">AromaLux</span> <br />
+        <span class="font-bold pt-10">Ocean Breeze Pour Homme <br />
+          ₹1799.00
+        </span>
+      </div>
+      <div>
+        <img src="https://jimmyswhiskey.in/storage/products/iTjLnNGV4tHzcV3CWX6XR8xaN0Imto0LtuIKD5rW.webp" alt="" />
+        <span class="text-pink-700 font-bold">NoirAura</span><br />
+        <span class="font-bold pt-10">Midnight Amber Essence<br />
+          ₹1799.00
+        </span>
+      </div>
+      <div>
+        <img src="https://jimmyswhiskey.in/storage/products/FrRnqFBqmpsTQDSMs171cLeEv1jvLmzBxfNYlCHR.webp" alt="" />
+        <span class="text-pink-700 font-bold">AromaLux</span> <br />
+        <span class="font-bold pt-10">Ocean Breeze Pour Homme <br />
+          ₹1799.00
+        </span>
+      </div>
+      <div>
+        <img src="https://jimmyswhiskey.in/storage/products/iTjLnNGV4tHzcV3CWX6XR8xaN0Imto0LtuIKD5rW.webp" alt="" />
+        <span class="text-pink-700 font-bold">NoirAura</span> <br />
+        <span class="font-bold pt-10">Midnight Amber Essence<br />
+          ₹1799.00
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- image  -->
+  <div>
+    <div class="mt-15">
+      <img src="https://jimmyswhiskey.in/assets/highlight/laptop.webp" alt=""
+        class="hidden md:block w-full h-auto object-cover ">
+    </div>
+
+    <div>
+      <img src="https://jimmyswhiskey.in/assets/highlight/phone.jpeg" alt=""
+        class="block md:hidden w:full h-auto object-cover">
+    </div>
+  </div>
+
+  <div class="bg-[#f5f1ec] py-16 px-4 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-5xl font-serif text-gray-900 mb-4">
+      Subscribe to our newsletter
+    </h2>
+
+    <!-- Subtext -->
+    <p class="text-gray-500 mb-8 text-sm md:text-base">
+      to stay up to date on all the latest news and offers from us
+    </p>
+
+    <!-- Input + Button -->
+    <div class="flex items-center justify-center">
+
+      <div class="flex items-center bg-white rounded-full shadow-md p-2 w-full max-w-xl">
+
+        <!-- Input -->
+        <input type="email" placeholder="Enter your email address" class="flex-1 outline-none text-sm px-2">
+        <!-- Button -->
+        <button
+          class="bg-yellow-700 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-yellow-800 transition">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <footer class="bg-[#fffaf7] py-12">
+
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Logo + Description -->
+      <div>
+        <img src="https://jimmyswhiskey.in/assets/logo-text.png" class="h-12 mb-4" alt="logo">
+
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Curating the finest fragrances and beauty essentials for the discerning connoisseur.
+          Elevate your senses with our premium collection.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex gap-3 mt-6">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+
+      <!-- Shop -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Shop</h2>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li>Fragrance</li>
+          <li>Attar</li>
+          <li>Dakhoon</li>
+          <li>Gift Sets</li>
+          <li>All Products</li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Support</h2>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li>About Us</li>
+          <li>My Account</li>
+          <li>Order Status</li>
+          <li>Membership</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Legal</h2>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li>Terms & Conditions</li>
+          <li>Shipping Policy</li>
+          <li>Returns & Exchanges</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Contact Us</h2>
+
+        <ul class="space-y-4 text-sm text-gray-700">
+
+          <li class="flex gap-3">
+            <span>📍</span>
+            <span>Jimmy's Whiskey House, 123 Luxury Lane, Mumbai, Maharashtra 400001</span>
+          </li>
+
+          <li class="flex gap-3">
+            <span>📞</span>
+            <span>+91 93830 02793</span>
+          </li>
+
+          <li class="flex gap-3">
+            <span>✉️</span>
+            <span>support@jimmyswhiskey.com</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div
+      class="container mx-auto px-6 mt-10 pt-6 border-t text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>© 2026 Jimmy's Whiskey. All Rights Reserved.</p>
+
+      <div class="flex gap-3">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+
+  </footer> <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".hero-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        nav: false,
+        dots: true,
+      });
+    });
+  </script>
+</body>
+
+</html>
